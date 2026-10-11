@@ -1,0 +1,13 @@
+{
+  "name": "dronexmc-network",
+  "version": "1.0.0",
+  "description": "Official website for DronexMC Minecraft Network",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vercel/kv": "^2.0.0"
+  }
+}

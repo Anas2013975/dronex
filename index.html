@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DronexMC Network</title>
+  <meta name="description" content="DronexMC Network — a next-generation Minecraft network with competitive game modes, a driven community and polished gameplay. Join the adventure today.">
+  <meta property="og:title" content="DronexMC Network">
+  <meta property="og:description" content="A next-generation Minecraft network. Competitive game modes, custom systems, and a community built to last.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DronexMC">
+  <meta name="theme-color" content="#07080f">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-cube"><span></span><span></span><span></span><span></span></div>
+    <p>Loading DronexMC</p>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="DronexMC home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a855f7"/>
+            </linearGradient>
+          </defs>
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="url(#bg)" stroke-width="4"/>
+          <text x="32" y="44" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="url(#bg)" text-anchor="middle">D</text>
+        </svg>
+        <span class="brand-name">Dronex<em>MC</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#owners" class="nav-link">Owners</a>
+        <a href="#staff" class="nav-link">Staff</a>
+        <a data-link="discord" class="nav-link" target="_blank" rel="noopener">Discord</a>
+        <a data-link="store" class="nav-link" target="_blank" rel="noopener">Store</a>
+        <a data-link="apply" class="nav-cta" target="_blank" rel="noopener">Apply</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-links" aria-label="Mobile navigation">
+      <a href="#home" class="m-link">Home</a>
+      <a href="#about" class="m-link">About</a>
+      <a href="#games" class="m-link">Games</a>
+      <a href="#owners" class="m-link">Owners</a>
+      <a href="#staff" class="m-link">Staff</a>
+      <a data-link="discord" class="m-link" target="_blank" rel="noopener">Discord</a>
+      <a data-link="store" class="m-link" target="_blank" rel="noopener">Store</a>
+      <a data-link="apply" class="m-cta" target="_blank" rel="noopener">Apply</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="cube c1"></div>
+        <div class="cube c2"></div>
+        <div class="cube c3"></div>
+        <div class="cube c4"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge reveal">
+          <span class="pulse-dot"></span> Minecraft Network · Java &amp; Bedrock
+        </div>
+        <h1 class="hero-title reveal" id="heroTitle">DronexMC Network</h1>
+        <p class="hero-desc reveal" id="heroDesc"></p>
+        <div class="hero-actions reveal">
+          <a data-link="join" class="btn btn-primary" id="playBtn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            PLAY NOW
+          </a>
+          <a data-link="discord" class="btn btn-ghost" id="discordBtn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3c-.2.4-.5.9-.6 1.3a18 18 0 0 0-5.5 0C9.1 3.9 8.8 3.4 8.6 3a19.7 19.7 0 0 0-4.9 1.5A20.4 20.4 0 0 0 .2 18.1a19.9 19.9 0 0 0 6 3c.5-.7.9-1.4 1.3-2.2-.7-.3-1.4-.6-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4c-.6.4-1.3.7-2 1 .4.8.8 1.5 1.3 2.2a19.8 19.8 0 0 0 6-3A20.3 20.3 0 0 0 20.3 4.4ZM8 15.3c-1.2 0-2.1-1-2.1-2.3S6.8 10.7 8 10.7s2.2 1 2.1 2.3c0 1.3-.9 2.3-2.1 2.3Zm8 0c-1.2 0-2.1-1-2.1-2.3s.9-2.3 2.1-2.3 2.2 1 2.1 2.3c0 1.3-.9 2.3-2.1 2.3Z"/></svg>
+            DISCORD
+          </a>
+        </div>
+      </div>
+
+      <a href="#status" class="scroll-hint" aria-label="Scroll to server status">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SERVER STATUS ============ -->
+    <section class="section status-section" id="status">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Server Status</span>
+          <h2 class="section-title">Join The Network</h2>
+        </div>
+
+        <div class="status-card reveal" id="statusCard">
+          <div class="status-top">
+            <div class="status-indicator" id="statusIndicator">
+              <span class="status-dot"></span>
+              <span class="status-text" id="statusText">SERVER ONLINE</span>
+            </div>
+            <p class="status-note">Connect with either edition — one network, one community.</p>
+          </div>
+
+          <div class="edition-grid">
+            <div class="edition">
+              <div class="edition-head">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+                <h3>Java Edition</h3>
+              </div>
+              <div class="ip-row">
+                <div class="ip-block">
+                  <span class="ip-label">Server IP</span>
+                  <span class="ip-value" id="javaIp">—</span>
+                </div>
+                <button class="copy-btn" data-copy="javaIp" aria-label="Copy Java IP">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="edition">
+              <div class="edition-head">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg>
+                <h3>Bedrock Edition</h3>
+              </div>
+              <div class="ip-row">
+                <div class="ip-block">
+                  <span class="ip-label">Server IP</span>
+                  <span class="ip-value" id="bedrockIp">—</span>
+                </div>
+                <button class="copy-btn" data-copy="bedrockIp" aria-label="Copy Bedrock IP">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                </button>
+              </div>
+              <div class="ip-row">
+                <div class="ip-block">
+                  <span class="ip-label">Port</span>
+                  <span class="ip-value" id="bedrockPort">—</span>
+                </div>
+                <button class="copy-btn" data-copy="bedrockPort" aria-label="Copy Bedrock port">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-frame">
+            <div class="about-cube">
+              <div class="face front"></div><div class="face back"></div>
+              <div class="face right"></div><div class="face left"></div>
+              <div class="face top"></div><div class="face bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title" id="aboutTitle">About DronexMC</h2>
+          <p class="about-desc" id="aboutDesc"></p>
+          <a href="#games" class="btn btn-outline">Explore Games</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GAMES ============ -->
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Game Modes</span>
+          <h2 class="section-title">Games</h2>
+          <p class="section-sub">Every mode is built in-house, tuned for competition, and updated with the community.</p>
+        </div>
+        <div class="games-grid" id="gamesGrid"></div>
+        <div class="empty-state hidden" id="gamesEmpty">
+          <p>No game modes published yet — check back soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OWNERS ============ -->
+    <section class="section" id="owners">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Leadership</span>
+          <h2 class="section-title">Owners</h2>
+          <p class="section-sub">The people who built DronexMC and keep it moving forward.</p>
+        </div>
+        <div class="owners-grid" id="ownersGrid"></div>
+        <div class="empty-state hidden" id="ownersEmpty">
+          <p>Owner information coming soon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STAFF ============ -->
+    <section class="section" id="staff">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">The Team</span>
+          <h2 class="section-title">Staff</h2>
+          <p class="section-sub">The moderators and managers keeping every game mode fair and fun.</p>
+        </div>
+        <div class="staff-wrap reveal">
+          <table class="staff-table" id="staffTable">
+            <thead>
+              <tr>
+                <th>Profile</th>
+                <th>Name</th>
+                <th>Rank</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody id="staffBody"></tbody>
+          </table>
+          <div class="empty-state hidden" id="staffEmpty">
+            <p>No staff members to show yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Dronex<em>MC</em></span>
+      </div>
+      <p class="footer-text" id="footerText">© 2026 All Rights Reserved to <button class="admin-trigger" id="adminTrigger" title="">DronexMC</button></p>
+      <div class="footer-links">
+        <a data-link="discord" target="_blank" rel="noopener">Discord</a>
+        <a data-link="store" target="_blank" rel="noopener">Store</a>
+        <a data-link="apply" target="_blank" rel="noopener">Apply</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LOGIN MODAL ============ -->
+  <div class="modal-overlay" id="loginModal" aria-hidden="true">
+    <div class="modal login-modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <button class="modal-close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="login-head">
+        <svg class="brand-mark sm" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="none" stroke="url(#bg)" stroke-width="4"/>
+          <text x="32" y="44" font-family="Arial, sans-serif" font-size="32" font-weight="800" fill="url(#bg)" text-anchor="middle">D</text>
+        </svg>
+        <h3 id="loginTitle">Admin Login</h3>
+        <p>Authorized personnel only.</p>
+      </div>
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="loginUser">Username</label>
+          <input type="text" id="loginUser" autocomplete="username" required>
+          <span class="field-error" id="loginUserErr"></span>
+        </div>
+        <div class="field">
+          <label for="loginPass">Password</label>
+          <input type="password" id="loginPass" autocomplete="current-password" required>
+          <span class="field-error" id="loginPassErr"></span>
+        </div>
+        <div class="form-error hidden" id="loginFormErr"></div>
+        <button type="submit" class="btn btn-primary btn-block" id="loginSubmit">
+          <span class="btn-label">Sign In</span>
+          <span class="btn-spinner hidden"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
